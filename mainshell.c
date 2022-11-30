@@ -4,22 +4,27 @@
  * Return:void.
  */
 
-void main_shell(void)
+int main(void)
 {
     int status = 1;
+    size_t l = 0;
     char *readline;
-    char **parsed;
+    char **command = malloc(sizeof(char*) * 1024);
     int executed;
+
+    printf("$");
     while (status)
     {
-        printf("$");
         /**wait for user to enter commands */
-        readline = get_the_line();
-        parsed = parse_the_line();
-        executed = execute_the_line();
-        if (executed != status)
+        getline(&readline, &l, stdin);
+        command = parse_the_line(readline);
+        executed = execute_the_line(command);
+          if (executed != status)
         {
             break;
         }
+        free(readline);
+	    printf("$");
     }
+    return(1);
 }

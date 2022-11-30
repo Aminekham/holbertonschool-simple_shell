@@ -1,17 +1,18 @@
 #include "main.h"
 char *get_the_line(void)
 {
-    int len, i;
-    char *userinput;
+	long unsigned int l = 0, f;
+	char *userinput = NULL;
 
-    userinput = (char *)malloc(sizeof(char) * len);
-    if(userinput==NULL)
-    {
-        perror("")
-    }
-    while ((/* condition */))
-    {
-        /* code */
-    }
-    return (userinput);
+	f = getline(&userinput, &l, stdin);
+	if (userinput == NULL)
+	{
+		perror("A problem while mallocing the buffer");
+	}
+	if (f == EOF)
+	{
+		free(userinput);
+		exit(EXIT_SUCCESS);
+	}
+	return (userinput);
 }
