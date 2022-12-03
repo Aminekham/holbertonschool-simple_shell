@@ -6,7 +6,7 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0, i;
+	int v = 0;
 	char c[] = "/bin/";
 
 	printf("the value of v = %d", v);
