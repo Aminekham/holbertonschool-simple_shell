@@ -14,12 +14,11 @@ char **parse_the_line(char *buff)
 	whole_line = malloc(1024);
 	word = strtok(buff, " \n\t");
 	whole_line[i] = word;
-	while(word != NULL && word != "\n")
+	while(word)
 	{
 		i++;
 		word = strtok(NULL, " \n\t");
 		whole_line[i] = word;
 	}
-	printf("word : %s", word);
 	return(whole_line);
 }
