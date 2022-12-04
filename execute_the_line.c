@@ -7,8 +7,8 @@
 int execute_the_line(char * buuf[])
 {
 	int v = 0;
-	char *env[] = 
-	{
+	char c[] = "/bin/";
+	char *env[] = {
         "HOME=/",
         "PATH=/bin:/usr/bin",
         "TZ=UTC0",
@@ -18,6 +18,11 @@ int execute_the_line(char * buuf[])
     };
 
 	printf("the value of v = %d", v);
-	v = execve(buuf[0], buuf, env);
+	strcat(c, buuf[0]);
+	v = execve(c, buuf, env);
+	if (v == -1)
+	{
+		printf("no its here");
+	}
 	return (v);
 }
