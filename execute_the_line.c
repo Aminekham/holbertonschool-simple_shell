@@ -6,7 +6,7 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0;
+	int v = 0, l, i;
 	char c[] = "/bin/";
 	char *env[] = {
         "HOME=/",
@@ -16,13 +16,21 @@ int execute_the_line(char * buuf[])
         "LOGNAME=tarzan",
         0
     };
-
-	printf("the value of v = %d", v);
-	strcat(c, buuf[0]);
-	v = execve(c, buuf, env);
+	char *b = "/";
+	
+	if (*buuf[0] != *b)
+	{
+		strcat(c, buuf[0]);
+		v = execve(c, buuf, env);
+	}
+	else
+	{
+		v = execve(buuf[0], buuf, env);
+	}
 	if (v == -1)
 	{
-		printf("no its here");
+		printf("command doesn't exist\n");
+		exit(98);
 	}
 	return (v);
 }
