@@ -6,7 +6,7 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0, l, i;
+	int v = 0;
 	char c[] = "/bin/";
 	char *env[] = {
         "HOME=/",
