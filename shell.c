@@ -5,7 +5,7 @@
  *
  *
  */
-int main(void)
+int core(void)
 {
 	int i;
 	size_t l = 0;
@@ -33,4 +33,5 @@ int main(void)
 			wait(&i);
 		}
 	}
+	return(1);
 }

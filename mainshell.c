@@ -7,12 +7,16 @@
 int shell(char *readline)
 {
     char **command = malloc(sizeof(char*) * 1024);
+    int i = 0;
 
-    while (1)
+    /**wait for user to enter commands */
+    command = parse_the_line(readline);
+    execute_the_line(command);
+    while(*(command + i))
     {
-        /**wait for user to enter commands */
-        command = parse_the_line(readline);
-        execute_the_line(command);
+        free(*(command + i));
+        i++;
     }
+    free(command);
     return(1);
 }

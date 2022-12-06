@@ -6,14 +6,14 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0;
+	int v = 0, l, i;
 	char c[] = "/bin/";
 	char *env[] = {
-        "HOME=/",
+        "HOME=/desktop",
         "PATH=/bin:/usr/bin",
         "TZ=UTC0",
-        "USER=beelzebub",
-        "LOGNAME=tarzan",
+        "USER=root",
+        "LOGNAME=root",
         0
     };
 	char *b = "/";
