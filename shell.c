@@ -5,7 +5,7 @@
  *
  *
  */
-int core(void)
+int main(void)
 {
 	int i;
 	size_t l = 0;
