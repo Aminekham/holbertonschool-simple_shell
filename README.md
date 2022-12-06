@@ -13,19 +13,19 @@
 
 2- Algorithm
 
-    -flowchart
+    -Flowchart
     -Analyse
     -Steps
     -Files
 
 3- Testing
 
-    -testing with gcc
-    -screenshots
+    -Testing with gcc
+    -Screenshots
 
 4- Functions
 
-    -c functions used
-    -functions that we made during this project
+    -C functions used
+    -Functions that we made during this project
 
 5- Authors
