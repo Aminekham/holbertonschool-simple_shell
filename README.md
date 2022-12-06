@@ -1,4 +1,5 @@
-**C_SIMPLE_SHELL**
+<p style="text-align: center; font-weight: bold">C_Simple_Shell</p>
+
 >*## Holbertonschool_simple_shell_repo*
 
 
