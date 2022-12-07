@@ -8,7 +8,6 @@ int execute_the_line(char * buuf[])
 {
 	int v = 0;
 	char c[] = "/bin/";
-	char *b = "/";
 	
 	strcat(c, buuf[0]);
 	v = execve(c, buuf, NULL);
