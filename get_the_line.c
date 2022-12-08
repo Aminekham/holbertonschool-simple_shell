@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * 
- * 
-*/
+ * get_the_line - gets the line.
+ * Return: Void.
+ */
 char *get_the_line(void)
 {
 	int k;
-	long unsigned int l = 0;
+	unsigned long int l = 0;
 	char *userinput;
 
 	k = getline(&userinput, &l, stdin);

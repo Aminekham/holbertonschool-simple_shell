@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
+ *execute_the_line -executes the Line.
+ *@buuf:Buffer
+ *Return: int
  */
-int execute_the_line(char * buuf[])
+int execute_the_line(char *buuf[])
 {
 	int v = 0;
 	char c[] = "/bin/";
@@ -17,4 +17,3 @@ int execute_the_line(char * buuf[])
 	}
 	return (v);
 }
-

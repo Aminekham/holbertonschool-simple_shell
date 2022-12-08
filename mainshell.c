@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * first_step
- * Return:void.
+ * shell- mallocs and calls functions.
+ * @readline:the user iput.
+ * Return:int.
  */
 
 int shell(char *readline)
 {
-    char **command = malloc(sizeof(char*) * 1024);
+	char **command = malloc(sizeof(char *) * 1024);
 
-
-    /**wait for user to enter commands */
-    command = parse_the_line(readline);
-    execute_the_line(command);
-    return(1);
+	/**wait for user to enter commands */
+	command = parse_the_line(readline);
+	execute_the_line(command);
+	return (1);
 }
