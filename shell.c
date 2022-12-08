@@ -15,7 +15,8 @@ int main(void)
 		k = getline(&readline, &l, stdin);
 		if (k == EOF)
 		{
-			exit(127);
+			free(readline);
+			exit(0);
 		}
 		if (strcmp(readline, "exit\n") == 0)
 		{
