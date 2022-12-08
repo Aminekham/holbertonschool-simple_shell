@@ -12,8 +12,6 @@ int main(void)
 	while (1)
 	{
 		readline = get_the_line();
-		if (readline == NULL)
-			continue;
 		i = fork();
 		if (i == 0)
 		{
