@@ -25,6 +25,8 @@ char *get_the_line(void)
 			printf("%s\n", *env);
 			env++;
 		}
+		free(userinput);
+		return NULL;
 	}
 	if (strcmp(userinput, "exit\n") == 0)
 	{
