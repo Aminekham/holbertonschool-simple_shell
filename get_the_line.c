@@ -20,13 +20,11 @@ char *get_the_line(void)
 	{
 		char **env = environ;
 
-		free(userinput);
-		while (*env != NULL)
+		while (*env)
 		{
 			printf("%s\n", *env);
 			env++;
 		}
-		return(NULL);
 	}
 	if (strcmp(userinput, "exit\n") == 0)
 	{
