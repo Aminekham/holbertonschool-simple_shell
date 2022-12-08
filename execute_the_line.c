@@ -6,7 +6,8 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0;
+	int v = 0, i;
+	char c[] = "/bin/";
 
 	v = execve(buuf[0], buuf, NULL);
 	if (v == -1)
