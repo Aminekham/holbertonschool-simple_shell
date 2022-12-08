@@ -23,3 +23,6 @@
     -Functions that we made during this project
 
 :dart:- Authors
+
+    - [CyrineZekri] : (https://github.com/CyrineZekri)
+    - [Amine Khammessi] : (https://github.com/Aminekham)
