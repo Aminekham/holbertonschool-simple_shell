@@ -9,7 +9,7 @@
     -Used editor
 
 :dart:- Steps 
- The Shell is an infinite Loop that keeps running until exit or reaching end of file (EOF)
+ - The Shell is an infinite Loop that keeps running until exit or reaching end of file (EOF)
 
 :dart:- Testing
 
