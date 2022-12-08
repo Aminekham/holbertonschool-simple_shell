@@ -21,7 +21,7 @@ int main(void)
 		if (strcmp(readline, "exit\n") == 0)
 		{
 			free(readline);
-			exit(98);
+			exit(0);
 			break;
 		}
 		if (strcmp(readline, "env\n") == 0)
