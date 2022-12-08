@@ -20,6 +20,12 @@ int execute_the_line(char * buuf[])
 	if (v == -1)
 	{
 		return(v);
+		while (*buuf)
+		{
+			free(*buuf);
+			buuf++;
+		}
+		free(buuf);
 	}
 	return (v);
 }
