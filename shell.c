@@ -8,10 +8,16 @@
 int main(void)
 {
 	int i;
+	size_t l = 0;
 	char *readline;
 	while (1)
 	{
-		readline = get_the_line();
+		getline(&readline, &l, stdin);
+		if (strcmp(readline, "exit\n") == 0)
+		{
+			exit(98);
+			break;
+		}
 		i = fork();
 		if (i == 0)
 		{
