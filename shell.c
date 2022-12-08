@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *main - the main function for shell
+ *Return: returns the value 1
  */
 int main(void)
 {
@@ -25,8 +23,7 @@ int main(void)
 			break;
 		}
 		if (strcmp(readline, "env\n") == 0)
-		{
-			env();
+		{env();
 		}
 		i = fork();
 		if (i == 0)
@@ -38,5 +35,5 @@ int main(void)
 		else
 			wait(&i);
 	}
-	return(1);
+	return (1);
 }

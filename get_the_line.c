@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * 
- * 
-*/
+ *get_the_line - the function to get the line and test on it
+ *Return: the whole command ready to parse
+ */
 char *get_the_line(void)
 {
 	ssize_t k = 0;
