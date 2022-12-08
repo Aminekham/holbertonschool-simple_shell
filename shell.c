@@ -9,7 +9,7 @@ int main(void)
 {
 	int i = 0, k = 0;
 	size_t l = 0;
-	char *readline;
+	char *readline = NULL;
 	while (1)
 	{
 		k = getline(&readline, &l, stdin);
