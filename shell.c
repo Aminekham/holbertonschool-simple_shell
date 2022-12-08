@@ -7,17 +7,12 @@
  */
 int main(void)
 {
-	int i;
+	int i, k;
 	size_t l = 0;
 	char *readline;
 	while (1)
 	{
-		getline(&readline, &l, stdin);
-		if (strcmp(readline, "exit\n") == 0)
-		{
-			exit(98);
-			break;
-		}
+		readline = get_the_line();
 		i = fork();
 		if (i == 0)
 		{
