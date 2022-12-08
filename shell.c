@@ -5,7 +5,6 @@
  *
  *
  */
-extern char **environ;
 int main(void)
 {
 	int i;
@@ -13,7 +12,6 @@ int main(void)
 
 	while (1)
 	{
-		printf("@root §");
 		readline = get_the_line();
 		i = fork();
 		if (i == 0)
