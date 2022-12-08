@@ -1,4 +1,4 @@
-<p style="text-align: center; font-weight: bold"> Holberton School _Simple_Shell</p>
+<p style="text-align: center; font-weight: bold">Holberton School _Simple_Shell</p>
 
 ![WELCOME](https://i.pinimg.com/originals/9d/b9/71/9db9712c704dfba57ad2737bcf0de8a3.gif)
 
