@@ -34,8 +34,8 @@ int execute_the_line(char * buuf[])
 			free(*buuf);
 			buuf++;
 		}
-		free(buuf);
 		return(v);
+		free(buuf);
 	}
 	return (v);
 }
