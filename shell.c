@@ -20,8 +20,8 @@ int main(void)
 		}
 		if (strcmp(readline, "exit\n") == 0)
 		{
-			exit(98);
 			free(readline);
+			exit(98);
 			break;
 		}
 		if (strcmp(readline, "env\n") == 0)
