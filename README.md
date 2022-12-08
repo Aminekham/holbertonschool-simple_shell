@@ -8,12 +8,8 @@
     -Shell description
     -Used editor
 
-:dart:- Algorithm
-
-    -Flowchart
-    -Analyse
-    -Steps
-    -Files
+:dart:- Steps 
+ The Shell is an infinite Loop that keeps running until exit or reaching end of file (EOF)
 
 :dart:- Testing
 
