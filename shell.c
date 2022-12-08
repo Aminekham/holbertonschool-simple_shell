@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i = 0, k = 0, f = 0;
+	int i = 0, k = 0;
 	size_t l = 0;
 	char *readline = NULL;
 	while (1)
@@ -31,10 +31,7 @@ int main(void)
 		i = fork();
 		if (i == 0)
 		{
-			f = shell(readline);
-			if (f == -1)
-				break;
-			free(readline);
+			shell(readline);
 		}
 		else if (i < 0)
 			exit(98);
