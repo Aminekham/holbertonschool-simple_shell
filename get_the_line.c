@@ -5,21 +5,22 @@
 */
 char *get_the_line(void)
 {
-	int k;
+	ssize_t k = 0;
 	long unsigned int l = 0;
 	char *userinput;
 
 	k = getline(&userinput, &l, stdin);
 	if (userinput == NULL)
 	{
+		free(userinput);
 		perror("A problem while mallocing the buffer");
 	}
-	else if (k == EOF)
+	if (k == EOF)
 	{
 		free(userinput);
 		exit(0);
 	}
-	else if (strcmp(userinput, "exit\n") == 0)
+	if (strcmp(userinput, "exit\n") == 0)
 	{
 		free(userinput);
 		exit(0);
