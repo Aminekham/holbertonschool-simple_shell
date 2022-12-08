@@ -1,6 +1,6 @@
 # Simple Shell 
 
-To close our Low Level Programming module, we are expected to create a simple UNIX command Interpreter using C Language.
+To close our Low Level Programming module, we are expected to create a simple UNIX command Interpreter using C.
 
 
 ![WELCOME](https://i.pinimg.com/originals/9d/b9/71/9db9712c704dfba57ad2737bcf0de8a3.gif)
