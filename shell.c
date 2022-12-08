@@ -8,29 +8,14 @@
 extern char **environ;
 int main(void)
 {
-	int i;
+	int i , k;
 	size_t l = 0;
 	char *readline;
 
 	while (1)
 	{
 		printf("@root §");
-		getline(&readline, &l, stdin);
-		if (strcmp(readline, "env\n") == 0)
-		{
-			char ** env = environ;
-
-   			 while (*env != NULL)
-    		{
-    		    printf("%s\n", *env);
-    		    env++;
-    		}
-		}
-		if (strcmp(readline, "exit\n") == 0)
-		{
-			exit(98);
-			break;
-		}
+		readline = get_the_line();
 		i = fork();
 		if (i == 0)
 		{
