@@ -12,11 +12,5 @@ int shell(char *readline)
     /**wait for user to enter commands */
     command = parse_the_line(readline);
     execute_the_line(command);
-    while(*(command + i))
-    {
-        free(*(command + i));
-        i++;
-    }
-    free(command);
     return(1);
 }
