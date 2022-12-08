@@ -26,6 +26,7 @@ int main(void)
 		{
 			wait(&i);
 		}
+		free(readline);
 	}
 	return(1);
 }

@@ -20,14 +20,17 @@ char *get_the_line(void)
 	{
 		char **env = environ;
 
+		free(userinput);
 		while (*env != NULL)
 		{
 			printf("%s\n", *env);
 			env++;
 		}
+		return(NULL);
 	}
 	if (strcmp(userinput, "exit\n") == 0)
 	{
+		free(userinput);
 		exit(98);
 	}
 	if (userinput == NULL)
