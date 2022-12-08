@@ -26,7 +26,7 @@ char *get_the_line(void)
 			env++;
 		}
 		free(userinput);
-		return NULL;
+		return (NULL);
 	}
 	if (strcmp(userinput, "exit\n") == 0)
 	{

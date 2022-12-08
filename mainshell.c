@@ -8,11 +8,9 @@ int shell(char *readline)
 {
     char **command = malloc(sizeof(char*) * 1024);
 
-    while (1)
-    {
-        /**wait for user to enter commands */
-        command = parse_the_line(readline);
-        execute_the_line(command);
-    }
+
+    /**wait for user to enter commands */
+    command = parse_the_line(readline);
+    execute_the_line(command);
     return(1);
 }
