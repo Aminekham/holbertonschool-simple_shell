@@ -7,7 +7,7 @@
 int shell(char *readline)
 {
     char **command = malloc(sizeof(char*) * 1024);
-    int i = 0;
+
 
     /**wait for user to enter commands */
     command = parse_the_line(readline);
