@@ -1,34 +1,38 @@
-<p style="text-align: center; font-weight: bold">Holberton School _Simple_Shell</p>
+# Simple Shell 
 
+To close our Low Level Programming using C module, we are expected to create a simple UNIX command Interpreter.
 ![WELCOME](https://i.pinimg.com/originals/9d/b9/71/9db9712c704dfba57ad2737bcf0de8a3.gif)
 
-:round_pushpin:- Overview 
-    -Project Description
-    -Shell description
-    -Used editor
+## Overview 
 
-:round_pushpin:- Steps 
-    - The Shell is an infinite Loop that keeps running until exit or reaching end of file (EOF).
-    During its lifetime, the shell does three main things : 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-    -Initialize:
-     In this step, a typical shell would read and execute its configuration files. 
-    These change aspects of the shell’s behavior.
-    -Interpret: 
-    Next, the shell reads commands from stdin (which could be interactive, or a file)
-    and executes them.
-    -Terminate: After its commands are executed, the shell executes any shutdown commands,
-    frees up any memory, and terminates.
+```bash
+pip install foobar
+```
 
+## Usage
 
-:pushpin:- Testing
-    -Testing with gcc
-    -Screenshots
+```python
+import foobar
 
-:dart:- Functions
-    -C functions used
-    -Functions that we made during this project
+# returns 'words'
+foobar.pluralize('word')
 
-:dart:- Authors
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Contributors 
     - [CyrineZekri] : (https://github.com/CyrineZekri)
-    - [Amine Khammessi] : (https://github.com/Aminekham)
+    - [Amine Khammessi] : (https://github.com/Aminekham
