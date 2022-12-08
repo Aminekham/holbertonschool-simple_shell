@@ -28,10 +28,8 @@ int execute_the_line(char * buuf[])
 	strcat(c, buuf[0]);
 	v = execve(c, buuf, NULL);
 	if (v == -1)
-	{
-		while (*buuf)
-		{
-			free(*buuf);
+	{while (*buuf)
+		{free(*buuf);
 			buuf++;
 		}
 		return(v);
