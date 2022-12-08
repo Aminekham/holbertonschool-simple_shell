@@ -37,10 +37,5 @@ char *get_the_line(void)
 	{
 		perror("A problem while mallocing the buffer");
 	}
-	if (f == EOF)
-	{
-		free(userinput);
-		exit(EXIT_SUCCESS);
-	}
 	return (userinput);
 }

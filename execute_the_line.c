@@ -6,19 +6,15 @@
  */
 int execute_the_line(char * buuf[])
 {
-	int v = 0, i;
+	int v = 0;
 	char c[] = "/bin/";
 
-	v = execve(buuf[0], buuf, NULL);
+	strcat(c, buuf[0]);
+	v = execve(c, buuf, NULL);
 	if (v == -1)
 	{
-		while (*buuf != NULL)
-		{
-			free(*buuf);
-			buuf++;
-		}
-		printf("command doesn't exist\n");
-		exit(98);
+		printf("no its here");
 	}
 	return (v);
 }
+
