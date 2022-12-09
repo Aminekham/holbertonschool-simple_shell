@@ -1,0 +1,89 @@
+." Process this file with
+." groff -man -Tascii man_1_simple_shell.1
+."
+.TH NAME
+.Sh NAME
+.B Simple Shell
+.SH SYNOPSIS
+bash [options] [file]
+.SH DESCRIPTION
+Shell is a command language interpreter that executes commands read from the standard input or from a file. 
+It also incorporates useful features from the Korn and C shells (ksh and csh).
+Our simple shell s intended to be a conformant implementation of the Shell and Utilities portion of the IEEE 
+POSIX specification (IEEE Standard 1003.1). Bash can be configured to be POSIX-conformant by default
+.SH INVOCATION:
+If any of the files exist but cannot be read, bash reports an error.
+If any of the commands entered from the terminal do not exist, bash reports an error.
+If any of the entered commands exist and can be read, bash executes the entered command followed by a new line.
+When the project shell starts, bash reads and executes the command entered from ~ / bin /, if the files exist.
+When a login shell exits, bash reads and executes commands from the ~ / .bash / files, if the files exist.
+
+.SH DEFINITIONS:
+The following definitions are used in the rest of this document:
+
+White:
+A space or tabulation.
+
+Word:
+A sequence of characters considered as a single unit by the shell. Also known as token.
+name.
+
+A word consisting only of alphanumeric characters and underscores, and beginning with 
+an alphabetic character or an underscore. Also referred to as an identifier.
+
+.SH Commands:
+
+A simple command is a sequence of optional variable assignments followed by blank-separated 
+words and redirections, and terminated by a control operator. The first word specifies the
+command to be executed, and is passed as argument zero. The remaining words are passed as 
+arguments to the invoked command.
+The return value of a simple command is its exit status, or 128+n if the command is terminated 
+by signal n.
+
+Some of the  most used commands: 
+
+Ls :
+
+Pwd : 
+
+Mkdir: to make directory
+
+.SH Pipelines:
+
+A pipeline is a sequence of one or more commands separated by one of the control operators | or 
+|&. The format for a pipeline is:
+[time [-p]] [ ! ] command [ [|â”‚|&] command2 ... ]
+The standard output of command is connected via a pipe to the standard input of command2. 
+This connection is performed before any redirections specified by the command (see REDIRECTION below).
+If |& is used, the standard error of command is connected to command2's standard input through the pipe;
+it is shorthand for 2>&1 |. This implicit redirection of the standard error is performed after any
+ redirections specified by the command.
+
+
+.SH Environment
+
+When a program is invoked it is given an array of strings called the environment. 
+This is a list of name-value pairs, of the form name=value.
+
+The shell provides several ways to manipulate the environment. 
+On invocation, the shell scans its own environment and creates a parameter for each name found, 
+automatically marking it for export to child processes. Executed commands inherit the environment.
+
+.SH Exit Status
+For the shell's purposes, a command which exits with a zero exit status has succeeded. 
+An exit status of zero indicates success. A non-zero exit status indicates failure. 
+When a command terminates on a fatal signal N, bash uses the value of 128+N as the exit status.
+
+
+  
+.SH COPYRIGHT
+.PP
+Bash is Copyright Â© 1989-2009 by the Free Software Foundation, Inc.
+.SH AUTHORS
+.PP
+
+This man  page  is  created  by: 
+    - [CyrineZekri] : (https://github.com/CyrineZekri)
+    - [Amine Khammessi] : (https://github.com/Aminekham)
+.RS
+.nf
