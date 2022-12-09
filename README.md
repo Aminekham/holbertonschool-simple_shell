@@ -69,8 +69,28 @@ And in Interactive mode via these cases:
     hsh main.c shell.c test_ls_2
     $
 
-  ## :rocket:Files Architecture 
+  ## :bookmark_tabs: Files Architecture 
+
+    . main.h : Header file containing all functions prototypes and included header files 
+    . mainshell.c : contains all the function calls contributing the shell work 
+    . get_the_line.c : gets the user input from the standard input
+    . parse_the_line.c : takes the line of command and divides it.
+    . env.c : gets and prints the environment
+    . AUTHORS : file containing authors names and their github usernames
+
+  ## :gem: Functions and System Calls Used 
+
+    execve 
+    exit 
+    fork 
+    free 
+    getpid 
+    malloc 
+    perror 
+    printf 
+    strtok
 
   ## :gem: Contributors 
+
     - [CyrineZekri] : (https://github.com/CyrineZekri)
     - [Amine Khammessi] : (https://github.com/Aminekham
