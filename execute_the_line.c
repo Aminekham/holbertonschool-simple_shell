@@ -15,8 +15,11 @@ int execute_the_line(char *buuf[])
 	{
 		execve(buuf[0], buuf, NULL);
 	}
-	strcat(c, buuf[0]);
-	v = execve(c, buuf, NULL);
+	else
+	{
+		strcat(c, buuf[0]);
+		v = execve(c, buuf, NULL);
+	}
 	if (v == -1)
 	{
 		printf("no its here");
