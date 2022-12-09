@@ -4,7 +4,7 @@
  *@buuf: the buffer with the whole command
  *Return: integer of the status
  */
-int execute_the_line(char * buuf[])
+int execute_the_line(char *buuf[])
 {
 	int v = 0;
 
