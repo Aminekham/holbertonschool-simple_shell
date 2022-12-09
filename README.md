@@ -3,13 +3,13 @@
 To close our Low Level Programming module, we are expected to create a simple UNIX command Interpreter using C.
 
 
-![WELCOME](https://i.pinimg.com/originals/9d/b9/71/9db9712c704dfba57ad2737bcf0de8a3.gif)
+![WELCOME](https://media.tenor.com/GVk4jB2u_i8AAAAd/coding.gif)
 
-## Shell Overview 
+## :eyes: Shell Overview 
 Our simple Shell is a UNIX command Line interpreter that reads commands from the standard input or a file
 and executes them.
 
-## How our simple shell works : 
+## :rocket: How our simple shell works : 
 It consists of a an infinite loop that is only interrupted by reaching End of File (EOF) or pressing exit .
 it follows the following steps : 
 
@@ -22,8 +22,8 @@ it follows the following steps :
     . Free the allocated memory && the command output 
     . Go back to the begining of the infinite loop and print a prompt .
 
-## Flowchart
-To better understand the Logic behind our simple shell, please check this Flowchart 
+## :chart_with_upwards_trend: Flowchart
+To better understand the Logic behind our simple shell, please check this Flowchart : 
 
 
 ```python
@@ -39,13 +39,37 @@ foobar.pluralize('goose')
 foobar.singularize('phenomena')
 ```
 
-## Contributing
+## Compilation
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Our shell is compiled this way:
 
-Please make sure to update tests as appropriate.
+    -gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-## Contributors 
+## Testing 
+
+Our shell works  like this in interactive mode:
+
+    -$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
+But also in non-interactive mode:
+
+    -$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+
+ ## Contributors 
     - [CyrineZekri] : (https://github.com/CyrineZekri)
     - [Amine Khammessi] : (https://github.com/Aminekham
