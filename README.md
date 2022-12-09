@@ -16,7 +16,7 @@ it follows the following steps :
 
 1. Reads the command(s) from the standard Input.
 2. Parses the command(s)
-3. Executes the command (s) which takes few other important steps .
+3. Executes the command (s) which takes few other important steps: 
     . search the command in the environment 
     . search for the path 
     . create the child process to execute the command 
