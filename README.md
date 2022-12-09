@@ -61,7 +61,7 @@ And in Interactive mode via these cases:
   ## :bookmark_tabs: Files Architecture 
 
     + main.h : Header file containing all functions prototypes and included header files 
-    + mainshell.c : contains all the function calls contributing the shell work 
+    + mainshell.c : contains the function calls contributing the shell work 
     + get_the_line.c : gets the user input from the standard input
     + parse_the_line.c : takes the line of command and divides it.
     + env.c : gets and prints the environment
