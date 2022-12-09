@@ -15,11 +15,11 @@ int main(void)
 		k = getline(&readline, &l, stdin);
 		if (k == EOF)
 		{
-			exit(127);
+			exit(0);
 		}
 		if (strcmp(readline, "exit\n") == 0)
 		{
-			exit(98);
+			exit(0);
 			free(readline);
 			break;
 		}
