@@ -1,35 +1,37 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *main - the main function for shell
+ *Return: the integer of the status
  */
 int main(void)
 {
-	int i;
+	int i, k;
 	size_t l = 0;
 	char *readline;
+
 	while (1)
 	{
-		getline(&readline, &l, stdin);
+		k = getline(&readline, &l, stdin);
+		if (k == EOF)
+		{
+			free(readline);
+			exit(0);
+		}
 		if (strcmp(readline, "exit\n") == 0)
 		{
-			exit(98);
+			exit(0);
+			free(readline);
 			break;
 		}
 		i = fork();
 		if (i == 0)
 		{
 			shell(readline);
+			free(readline);
 		}
 		else if (i < 0)
-		{
 			exit(98);
-		}
 		else
-		{
 			wait(&i);
-		}
 	}
 }

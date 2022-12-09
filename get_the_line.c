@@ -2,7 +2,7 @@
 /**
  *get_the_line -gets the line and tests on it.
  *Return: the command ready to parse
-  */
+ */
 char *get_the_line(void)
 {
 	ssize_t k = 0;
