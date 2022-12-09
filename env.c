@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- *env - the env function
+ * env - the environment function
  *Return: 1
  */
 extern char **environ;
 int env(void)
 {
 	char **env;
+
 	env = environ;
 	while (*env)
 	{
