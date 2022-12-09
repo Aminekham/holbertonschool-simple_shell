@@ -22,7 +22,7 @@ int execute_the_line(char *buuf[])
 	}
 	if (v == -1)
 	{
-		printf("no its here");
+		printf("command not found");
 	}
 	return (v);
 }
