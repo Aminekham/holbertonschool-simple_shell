@@ -92,5 +92,5 @@ And in Interactive mode via these cases:
 
   ## :gem: Contributors 
 
-    - [CyrineZekri] : (https://github.com/CyrineZekri)
-    - [Amine Khammessi] : (https://github.com/Aminekham
+    ###  CyrineZekri 
+    ### Amine Khammessi
