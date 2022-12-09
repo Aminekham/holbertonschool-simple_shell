@@ -26,3 +26,12 @@ int execute_the_line(char *buuf[])
 	}
 	return (v);
 }
+/**
+ * sigintHandler - handle ctrl c 
+ * @sig_num: integer
+ */
+void sigintHandler(__attribute__((unused)) int sig_num)
+{
+	signal(SIGINT, sigintHandler);
+	printf("\n");
+}

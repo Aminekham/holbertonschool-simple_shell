@@ -12,6 +12,7 @@ int main(void)
 	while (1)
 	{
 		k = getline(&readline, &l, stdin);
+		signal(SIGINT, sigintHandler);
 		if (k == EOF)
 		{
 			free(readline);
