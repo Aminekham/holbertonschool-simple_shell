@@ -82,5 +82,4 @@ And in Interactive mode via these cases:
 
   ## :gem: Contributors 
 
- #### CyrineZekri 
-#### Amine Khammessi
+ #### CyrineZekri        #### Amine Khammessi
