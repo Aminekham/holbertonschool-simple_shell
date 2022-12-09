@@ -20,8 +20,8 @@ int main(void)
 		}
 		if (strcmp(readline, "exit\n") == 0)
 		{
-			exit(0);
 			free(readline);
+			exit(0);
 			break;
 		}
 		i = fork();
