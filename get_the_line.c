@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *get_the_line - the function to get the line and test on itget_the_line - gets the line.
- *Return: the whole command ready to parseReturn: Void.
+ *get_the_line -gets the line and tests on it.
+ *Return: the command ready to parse
   */
 char *get_the_line(void)
 {
 	ssize_t k = 0;
-	long unsigned int l = 0;
+	unsigned long int l = 0;
 	char *userinput;
 
 	k = getline(&userinput, &l, stdin);
