@@ -19,5 +19,6 @@ char **parse_the_line(char *buff)
 		word = strtok(NULL, " \n\t");
 		whole_line[i] = word;
 	}
+	
 	return (whole_line);
 }

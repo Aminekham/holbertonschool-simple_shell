@@ -7,7 +7,7 @@ int main(void)
 {
 	int i, k;
 	size_t l = 0;
-	char *readline;
+	char *readline = NULL;
 
 	while (1)
 	{
