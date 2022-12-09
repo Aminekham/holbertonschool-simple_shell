@@ -17,11 +17,11 @@ it follows the following steps :
 1. Reads the command(s) from the standard Input.
 2. Parses the command(s)
 3. Executes the command (s) which takes few other important steps: 
-    . search the command in the environment 
-    . search for the path 
-    . create the child process to execute the command 
-    . Free the allocated memory && the command output 
-    . Go back to the begining of the infinite loop and print a prompt .
+    - search the command in the environment 
+    - search for the path 
+    - create the child process to execute the command 
+    - Free the allocated memory && the command output 
+    - Go back to the begining of the infinite loop and print a prompt .
 
 ## :chart_with_upwards_trend: Flowchart
 To better understand the Logic behind our simple shell, please check this Flowchart : 
