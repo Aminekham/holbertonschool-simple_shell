@@ -65,6 +65,7 @@ And in Interactive mode via these cases:
     + get_the_line.c : gets the user input from the standard input
     + parse_the_line.c : takes the line of command and divides it.
     + env.c : gets and prints the environment
+    + shell.c : contains the checks before executing the main program
     + AUTHORS : file containing authors names and their github usernames
 
   ## :gem: Functions and System Calls Used 
