@@ -10,7 +10,7 @@ To close our Low Level Programming module, we are expected to create a simple UN
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+pip install foobare
 ```
 
 ## Usage
