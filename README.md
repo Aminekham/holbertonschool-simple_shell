@@ -58,6 +58,10 @@ And in Interactive mode via these cases:
     hsh main.c shell.c test_ls_2
     $
 
+  ## :mag_right: Examples : 
+
+
+
   ## :bookmark_tabs: Files Architecture 
 
     + main.h : Header file containing all functions prototypes and included header files 
@@ -66,9 +70,9 @@ And in Interactive mode via these cases:
     + parse_the_line.c : takes the line of command and divides it.
     + env.c : gets and prints the environment
     + shell.c : contains the checks before executing the main program
-    + AUTHORS : file containing authors names and their github usernames
+    + AUTHORS : file containing authors' names and their github usernames
 
-  ## :gem: Functions and System Calls Used 
+  ## :iphone: Functions and System Calls Used 
 
     * execve 
     * exit 
