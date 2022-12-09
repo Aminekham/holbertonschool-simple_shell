@@ -61,25 +61,28 @@ And in Interactive mode via these cases:
   ## :black_nib: Examples : 
 
     ls
-    AUTHORS  README.md  execute_the_line.c  get_the_line.c  hsh  main.h  mainshell.c      man_1_simple_shell.1  parse_the_line.c  shell.c
+    AUTHORS  README.md  execute_the_line.c  get_the_line.c 
+    hsh  main.h  mainshell.c    man_1_simple_shell.1 
+    parse_the_line.c  shell.c
 
 
 
     pwd
     /home/amine/pf/holbertonschool-simple_shell
 
-  ls -l
-  total 40
-  -rw-r--r-- 1 root root  142 Dec  9 08:25 AUTHORS
-  -rw-r--r-- 1 root root 2773 Dec  9 12:48 README.md
-  -rw-r--r-- 1 root root 1179 Dec  9 04:38 Read.txt
-  -rw-r--r-- 1 root root  455 Dec  9 12:46 execute_the_line.c
-  -rw-r--r-- 1 root root  483 Dec  9 12:46 get_the_line.c
-  -rw-r--r-- 1 root root  275 Dec  9 12:46 main.h
-  -rw-r--r-- 1 root root  374 Dec  9 09:01 mainshell.c
-  -rw-r--r-- 1 root root 3563 Dec  9 12:46 man_1_simple_shell.1
-  -rw-r--r-- 1 root root  381 Dec  9 12:46 parse_the_line.c
-  -rw-r--r-- 1 root root  492 Dec  9 12:46 shell.c
+
+    ls -l
+    total 40
+    -rw-r--r-- 1 root root  142 Dec  9 08:25 AUTHORS
+    -rw-r--r-- 1 root root 2773 Dec  9 12:48 README.md
+    -rw-r--r-- 1 root root 1179 Dec  9 04:38 Read.txt
+    -rw-r--r-- 1 root root  455 Dec  9 12:46 execute_the_line.c
+    -rw-r--r-- 1 root root  483 Dec  9 12:46 get_the_line.c
+    -rw-r--r-- 1 root root  275 Dec  9 12:46 main.h
+    -rw-r--r-- 1 root root  374 Dec  9 09:01 mainshell.c
+    -rw-r--r-- 1 root root 3563 Dec  9 12:46 man_1_simple_shell.1
+    -rw-r--r-- 1 root root  381 Dec  9 12:46 parse_the_line.c
+    -rw-r--r-- 1 root root  492 Dec  9 12:46 shell.c
 
   ## :bookmark_tabs: Files Architecture 
 
