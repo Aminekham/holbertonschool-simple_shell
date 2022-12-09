@@ -8,6 +8,7 @@ int main(void)
 	int i = 0, k = 0;
 	size_t l = 0;
 	char *readline = NULL;
+
 	while (1)
 	{
 		k = getline(&readline, &l, stdin);
@@ -23,7 +24,8 @@ int main(void)
 			break;
 		}
 		if (strcmp(readline, "env\n") == 0)
-		{env();
+		{
+			env();
 		}
 		i = fork();
 		if (i == 0)
