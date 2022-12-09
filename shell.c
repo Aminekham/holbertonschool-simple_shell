@@ -7,32 +7,29 @@
  */
 int main(void)
 {
-	int i, k;
+	int i;
 	size_t l = 0;
-	char *readline = NULL;
+	char *readline;
 	while (1)
 	{
-		k = getline(&readline, &l, stdin);
-		if (k == EOF)
-		{
-			exit(0);
-		}
+		getline(&readline, &l, stdin);
 		if (strcmp(readline, "exit\n") == 0)
 		{
-			exit(0);
-			free(readline);
+			exit(98);
 			break;
-		}
-		if (strcmp(readline, "env\n") == 0)
-		{
-			env();
 		}
 		i = fork();
 		if (i == 0)
+		{
 			shell(readline);
+		}
 		else if (i < 0)
+		{
 			exit(98);
+		}
 		else
+		{
 			wait(&i);
+		}
 	}
 }
