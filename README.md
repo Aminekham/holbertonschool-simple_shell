@@ -1,4 +1,4 @@
-# Simple Shell 
+# :round_pushpin: Simple Shell 
 
 To close our Low Level Programming module, we are expected to create a simple UNIX command Interpreter using C.
 
@@ -8,10 +8,6 @@ To close our Low Level Programming module, we are expected to create a simple UN
 ## Shell Overview 
 Our simple Shell is a UNIX command Line interpreter that reads commands from the standard input or a file
 and executes them.
-
-```bash
-pip install foobare
-```
 
 ## How our simple shell works : 
 It consists of a an infinite loop that is only interrupted by reaching End of File (EOF) or pressing exit .
