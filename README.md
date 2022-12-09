@@ -58,7 +58,7 @@ And in Interactive mode via these cases:
     hsh main.c shell.c test_ls_2
     $
 
-  ## :mag_right: Examples : 
+  ## :black_nib: Examples : 
 
 
 
