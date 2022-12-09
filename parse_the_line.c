@@ -2,7 +2,7 @@
 /**
  *parse_the_line-parses the line.
  * @buff:Buffer
- * Return: vector
+ * Return: vector.
  */
 char **parse_the_line(char *buff)
 {
