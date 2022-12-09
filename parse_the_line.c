@@ -13,7 +13,6 @@ char **parse_the_line(char *buff)
 	whole_line = malloc(1024);
 	word = strtok(buff, " \n\t");
 	whole_line[i] = word;
-
 	while (word)
 	{
 		i++;

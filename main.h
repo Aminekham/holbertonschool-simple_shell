@@ -8,6 +8,7 @@
 
 int shell(char *readline);
 char *get_the_line(void);
+int env(void);
 char **parse_the_line(char *buff);
 int execute_the_line(char * buuf[]);
 #endif
