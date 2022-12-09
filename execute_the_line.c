@@ -13,7 +13,8 @@ int execute_the_line(char *buuf[])
 
 	if (f == k)
 	{
-		execve(buuf[0], buuf, NULL);
+		v = execve(buuf[0], buuf, NULL);
+		return(v);
 	}
 	strcat(c, buuf[0]);
 	v = execve(c, buuf, NULL);

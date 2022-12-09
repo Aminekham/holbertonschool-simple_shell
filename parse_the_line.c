@@ -7,8 +7,8 @@
 char **parse_the_line(char *buff)
 {
 	int i = 0;
-	char **whole_line;
-	char *word;
+	char **whole_line = NULL;
+	char *word = NULL;
 
 	whole_line = malloc(1024);
 	word = strtok(buff, " \n\t");
