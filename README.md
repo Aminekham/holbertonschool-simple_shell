@@ -1,4 +1,4 @@
-<p style="text-align: center> # :shell: Simple Shell </p>
+<p align: center ># :shell: Simple Shell </p>
 
 To close our Low Level Programming module, we are expected to create a simple UNIX command Interpreter using C.
 
