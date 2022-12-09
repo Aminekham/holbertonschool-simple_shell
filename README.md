@@ -9,6 +9,8 @@ To close our Low Level Programming module, we are expected to create a simple UN
 Our simple Shell is a UNIX command Line interpreter that reads commands from the standard input or a file
 and executes them.
 
+![flow](https://user-images.githubusercontent.com/83099419/206648228-6d6918e5-9847-486a-906d-4ea44a124bd9.png)
+
 ## :rocket: How our simple shell works : 
 It consists of a an infinite loop that is only interrupted by reaching End of File (EOF) or pressing exit .
 it follows the following steps : 
@@ -25,19 +27,6 @@ it follows the following steps :
 ## :chart_with_upwards_trend: Flowchart
 To better understand the Logic behind our simple shell, please check this Flowchart : 
 
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
 
 ## :mag_right: Compilation 
 
@@ -92,5 +81,5 @@ And in Interactive mode via these cases:
 
   ## :gem: Contributors 
 
-    ###  CyrineZekri 
-    ### Amine Khammessi
+    CyrineZekri 
+    Amine Khammessi
